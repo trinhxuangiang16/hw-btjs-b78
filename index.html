@@ -4,15 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      h4 {
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <label for="themSo">Nhập số vào đây</label>
     <input id="themSo" type="number" placeholder="Nhập vào đây" />
-    <button onclick="themSo()">Thêm số</button> <br />
-    <label for="doiCho">Đổi chổ</label>
-    <input type="number" id="doiChoA" placeholder="Chổ A" />
-    <input type="number" id="doiChoB" placeholder="Chổ B" />
-    <button id="btn-doiCho" onclick="doiCho()">Đổi chổ</button>
+    <button onclick="themSo()">Thêm số</button>
+    <br />
+    <h4>1. Tổng số dương:<span id="tongSoDuong"> </span></h4>
+    <br />
+    <h4>2. Đếm số dương:<span id="demSoDuong"> </span></h4>
+    <br />
+    <h4>3. Số nhỏ nhất: <span id="soNhoNhat"></span></h4>
+    <br />
+    <h4>4. Dương nhỏ nhất: <span id="duongNhoNhat"></span></h4>
+    <br />
+    <h4>5. Chẵn cuối cùng: <span id="chanCuoiCung"></span></h4>
+    <br />
+    <div>
+      <h4>6. Đổi chổ</h4>
+      <input type="number" id="doiChoA" placeholder="Chổ A" />
+      <input type="number" id="doiChoB" placeholder="Chổ B" />
+      <button id="btn-doiCho" onclick="doiCho()">Đổi chổ</button>
+    </div>
+    <h4>7. Sắp tăng dần: <span id="tangDan"></span></h4>
+    <br />
+    <h4>8. Số nguyên tố đầu tiên: <span id="soNguyenToDauTien"></span></h4>
+    <br />
+    <div>
+      <h4>9. Đếm số nguyên</h4>
+      <input type="number" id="themSoNguyen" placeholder="Thêm số vào" />
+      <button onclick="themSoNguyen()">Thêm Số</button> <br />
+      <br />
+      <div>
+        <button onclick="handleDemSoNguyen()">Đếm số nguyên</button>
+        <h4>Tổng số nguyên là: <span id="tongSoNguyen"></span></h4>
+      </div>
+      <br />
+      <h4>10. So sánh số lượng số âm và số dương: <span id="soSanh"></span></h4>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
