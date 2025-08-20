@@ -9,7 +9,8 @@ let tangDan = document.getElementById("tangDan");
 let songuyento = document.getElementById("soNguyenToDauTien");
 let tongNguyen = document.getElementById("tongSoNguyen");
 let soSanhAmDuong = document.getElementById("soSanh");
-
+let mangDaDoi = document.getElementById("mangDaDoi");
+let mangHienTai = document.getElementById("mangHienTai");
 //hàm callback tìm số nguyên tố đầu tiên
 let timSoNguyenTo = function (num) {
   if (num < 2) return false;
@@ -48,9 +49,8 @@ let handleDemSoNguyen = function () {
 let themSo = function () {
   let soThemVao = document.getElementById("themSo").value * 1;
   //Thêm số vào mảng
-
   arr.push(soThemVao);
-  console.log(arr);
+  mangHienTai.innerText = ` ${arr}`;
 
   //Tổng và đếm số dương
   let soDuongArr = arr.filter((item) => item > 0);
@@ -137,6 +137,7 @@ let doiCho = function () {
     let indexB = array[choA - 1];
     array[choA - 1] = indexA;
     array[choB - 1] = indexB;
+    mangDaDoi.innerHTML = ` ${array}`;
   } else {
     console.log("Nhập lại 2 ví trí thực");
   }

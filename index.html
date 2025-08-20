@@ -11,9 +11,12 @@
     </style>
   </head>
   <body>
-    <label for="themSo">Nhập số vào đây</label>
-    <input id="themSo" type="number" placeholder="Nhập vào đây" />
-    <button onclick="themSo()">Thêm số</button>
+    <div>
+      <h4 for="themSo">Nhập số vào đây</h4>
+      <input id="themSo" type="number" placeholder="Nhập vào đây" />
+      <button onclick="themSo()">Thêm số</button>
+      <h4>Mảng hiện tại: <span id="mangHienTai"></span></h4>
+    </div>
     <br />
     <h4>1. Tổng số dương:<span id="tongSoDuong"> </span></h4>
     <br />
@@ -30,6 +33,8 @@
       <input type="number" id="doiChoA" placeholder="Chổ A" />
       <input type="number" id="doiChoB" placeholder="Chổ B" />
       <button id="btn-doiCho" onclick="doiCho()">Đổi chổ</button>
+      <h4>Mảng sau khi đổi: <span id="mangDaDoi"></span></h4>
+      <br />
     </div>
     <h4>7. Sắp tăng dần: <span id="tangDan"></span></h4>
     <br />
